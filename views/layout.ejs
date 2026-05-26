@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title : 'Deluxe-TECH Computer Resources' %></title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  
+  <!-- Stripe -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    window.STRIPE_PUBLIC_KEY = '<%= stripeKey %>';
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <a href="/" class="logo">
+          ⚡ <%= config.company.shortName %>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <%- body %>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Company Info -->
+        <div class="footer-section">
+          <h4><%= config.company.shortName %></h4>
+          <p><%= config.company.tagline %></p>
+          <div style="margin-top: var(--spacing-lg);">
+            <p style="margin-bottom: var(--spacing-sm);">
+              <strong>Phone:</strong> <a href="tel:<%= config.company.phone %>"><%= config.company.phone %></a>
+            </p>
+            <p style="margin-bottom: var(--spacing-sm);">
+              <strong>Email:</strong> <a href="mailto:<%= config.company.email %>"><%= config.company.email %></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <% categories.forEach(cat => { %>
+              <li><a href="/shop?category=<%= cat.slug %>"><%= cat.name %></a></li>
+            <% }); %>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div class="footer-section">
+          <h4>Business Hours</h4>
+          <p style="font-size: 0.9rem;">
+            <strong>Mon-Fri:</strong> <%= config.businessHours.monday %><br>
+            <strong>Saturday:</strong> <%= config.businessHours.saturday %><br>
+            <strong>Sunday:</strong> <%= config.businessHours.sunday %><br><br>
+            <strong>Emergency:</strong><br>
+            <a href="tel:<%= config.company.emergencyPhone %>"><%= config.company.emergencyPhone %></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <%= new Date().getFullYear() %> <%= config.company.name %>. All rights reserved.</p>
+        <p style="margin-top: var(--spacing-md); font-size: 0.85rem;">Crafted with ❤️ for tech enthusiasts</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
