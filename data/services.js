@@ -4,101 +4,53 @@ module.exports = [
     name: 'Laptop Repair & Service',
     price: 'From $79',
     turnaround: '1-2 Days',
-    description: 'Expert laptop repair and maintenance services. From screen replacements to motherboard repairs.',
+    description: 'Expert laptop repair and maintenance services.',
     icon: '🔧',
-    features: [
-      'Screen replacement & repair',
-      'Battery replacement',
-      'Keyboard repair/replacement',
-      'Hard drive/SSD upgrade',
-      'Cooling system cleaning',
-      'Software troubleshooting',
-      'Data recovery services'
-    ]
+    features: ['Screen replacement', 'Battery replacement', 'SSD upgrade', 'Data recovery', 'Software troubleshooting']
   },
   {
     id: 'business-it-support',
     name: 'Business IT Support',
     price: 'Custom Quote',
     turnaround: 'Ongoing',
-    description: 'Comprehensive IT support for small and medium businesses. Managed services, helpdesk, and system administration.',
+    description: 'Comprehensive IT support for businesses.',
     icon: '🏢',
-    features: [
-      'On-site IT support',
-      'Remote monitoring & management',
-      'Network setup & maintenance',
-      'Hardware provisioning',
-      'Software licensing',
-      'Security audits',
-      '24/7 helpdesk support'
-    ]
+    features: ['On-site support', 'Remote monitoring', 'Network setup', 'Hardware provisioning', '24/7 helpdesk']
   },
   {
     id: 'data-recovery',
     name: 'Data Recovery',
     price: 'From $199',
     turnaround: '3-5 Days',
-    description: 'Professional data recovery from failed drives, accidental deletion, and hardware failures.',
+    description: 'Professional data recovery services.',
     icon: '💾',
-    features: [
-      'Hard drive recovery',
-      'SSD data recovery',
-      'USB drive recovery',
-      'RAID recovery',
-      'Deleted file recovery',
-      'Encrypted drive recovery',
-      'Free diagnosis & quote'
-    ]
+    features: ['Hard drive recovery', 'SSD recovery', 'USB recovery', 'RAID recovery', 'Free diagnosis']
   },
   {
     id: 'network-installation',
-    name: 'Network Installation & Setup',
+    name: 'Network Installation',
     price: 'From $299',
     turnaround: '1-2 Days',
-    description: 'Professional network design and installation. WiFi optimization, security configuration, and system integration.',
+    description: 'Professional network design and installation.',
     icon: '🌐',
-    features: [
-      'WiFi network design',
-      'Router/modem setup',
-      'Ethernet cabling',
-      'Network security',
-      'VPN configuration',
-      'Bandwidth optimization',
-      'Ongoing monitoring'
-    ]
+    features: ['WiFi design', 'Router setup', 'Cabling', 'Security config', 'Optimization']
   },
   {
     id: 'software-os-setup',
     name: 'Software & OS Setup',
     price: 'From $49',
     turnaround: '1 Day',
-    description: 'Fresh OS installation, software configuration, and system optimization. Windows, macOS, and Linux support.',
+    description: 'Fresh OS installation and software setup.',
     icon: '⚙️',
-    features: [
-      'Windows installation & activation',
-      'macOS setup',
-      'Linux configuration',
-      'Driver installation',
-      'Software installation & setup',
-      'System optimization',
-      'Backup configuration'
-    ]
+    features: ['Windows/Mac/Linux', 'Driver installation', 'Software setup', 'Optimization', 'Backup config']
   },
   {
     id: 'preventive-maintenance',
     name: 'Preventive Maintenance',
     price: 'From $99/month',
-    turnaround: 'Monthly/Quarterly',
-    description: 'Regular maintenance plans to keep your systems running smoothly and prevent future issues.',
+    turnaround: 'Monthly',
+    description: 'Regular maintenance to keep systems running smoothly.',
     icon: '🛡️',
-    features: [
-      'System health checks',
-      'Software updates',
-      'Security patches',
-      'Hard drive health monitoring',
-      'Performance optimization',
-      'Backup verification',
-      'Priority support'
-    ]
+    features: ['Health checks', 'Updates', 'Security patches', 'Monitoring', 'Priority support']
   }
 ];

@@ -23,13 +23,13 @@ module.exports = {
   },
 
   colors: {
-    primary: '#0b0e1a',      // Dark navy background
-    accent: '#38bdf8',       // Electric blue
-    gold: '#fbbf24',         // Warm gold
-    success: '#10b981',      // Green
-    danger: '#ef4444',       // Red
-    text: '#f1f5f9',         // Light text
-    textMuted: '#94a3b8'     // Muted text
+    primary: '#0b0e1a',
+    accent: '#38bdf8',
+    gold: '#fbbf24',
+    success: '#10b981',
+    danger: '#ef4444',
+    text: '#f1f5f9',
+    textMuted: '#94a3b8'
   },
 
   trustPoints: [
